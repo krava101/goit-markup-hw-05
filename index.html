@@ -424,10 +424,10 @@
         <div class="footer-form-wrap">
           <p class="footer-form-header">Subscribe</p>
           <form class="footer-form" action="">
-            <input type="text" name="email" placeholder="E-mail" />
+            <input type="email" name="email" placeholder="E-mail" />
             <button type="submit">
               <span>Subscribe</span>
-              <svg class="footer-form-icon" width="24" height="20">
+              <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#plane" />
               </svg>
             </button>
@@ -435,7 +435,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay" id="modal">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -453,7 +453,7 @@
               <use href="./images/icons.svg#user" />
             </svg>
           </label>
-          <label for="phoneInp">
+          <label for="userPhone">
             Phone
             <input type="tel" name="phone" id="userPhone" />
             <svg class="label-icon" width="13" height="13">
@@ -462,7 +462,7 @@
           </label>
           <label for="userEmail">
             Email
-            <input type="text" name="email" id="userEmail" />
+            <input type="email" name="email" id="userEmail" />
             <svg class="label-icon" width="15" height="12">
               <use href="./images/icons.svg#mail" />
             </svg>
