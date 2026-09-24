@@ -179,8 +179,7 @@
 }
 
 .modal-form input[type="checkbox"] {
-  min-width: 16px;
-  max-width: 16px;
+  width: 0;
   height: 16px;
   opacity: 0;
 }
