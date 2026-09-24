@@ -9,9 +9,9 @@
   height: 100vh;
 
   background-color: var(--navy-blue-modal);
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden; */
+  visibility: hidden;
   transition: opacity 250ms var(--transition);
 }
 
@@ -51,7 +51,6 @@
   background-color: var(--cornflower);
   transition:
     background-color 250ms var(--transition),
-    color 250ms var(--transition),
     border-color 250ms var(--transition);
 }
 
@@ -59,11 +58,16 @@
 .modal .close-btn:focus {
   background-color: var(--ocean);
   border-color: var(--ocean);
-  color: var(--white);
 }
 
 .close-icon {
   color: var(--navy-blue);
+  transition: color 250ms var(--transition);
+}
+
+.modal .close-btn:hover .close-icon,
+.modal .close-btn:focus .close-icon{
+  color: var(--white);
 }
 
 .modal-header {
@@ -166,21 +170,31 @@
 
 .checkbox-wrap {
   position: relative;
-  width: 100%;
   display: flex;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
+  width: 100%;
   margin: 16px 0 24px;
 }
 
 .modal-form input[type="checkbox"] {
-  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
   height: 16px;
   opacity: 0;
 }
 
+.modal-check{
+  color: #8e8f99;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
 .modal-check a {
   color: var(--iris);
+  text-decoration: underline;
 }
 
 .check-icon-wrap {
